@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+          <!--This is the tab name in the browser-->
+          <!--Hyper Text Markup Language HTML 
+              Cascasing Style Sheet CSS-->
+
+              <!--The link tag specifies the relationship 
+              between this document and an external source-->
+            <link rel="icon" type="image/png" href="images/ScuuduLogo.png">
+        <title>
+            My First Website
+        </title>
+
+        <script src="https://kit.fontawesome.com/8307860e85.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <!--CSS has types
+    Such as: 
+    Inline: Is a styles used within the opening tag of an element, E.g. <body style="background-color: darkslategrey;">
+    Internal: Is a style sheet used in the head of the html to change specific elements 
+    E.g.
+    <style>
+            body{
+                background-color: aqua;
+            }
+            h1{
+                color: rgb(255, 7, 7);
+            }
+            p{
+                color: coral;
+            }
+        </style>,
+    External: The most popular method. Here you use a new document to create the style. It is reusable for different projects
+    You do so by linking the style sheet in the head tag like so
+    E.g.
+
+    -->
+
+    
+    <!-- These are header tags -->
+    <body>
+
+        <header>
+            <h1>Admire My Site Biatchhh</h1>
+        </header>
+
+        <div class="icons">
+            <i class="fa-solid fa-house fa-5x"></i>
+            <i class="fa-brands fa-x-twitter fa-5x"></i>
+            <i class="fa-brands fa-youtube fa-5x"></i>
+            <i class="fa-brands fa-tiktok fa-5x"></i>
+        </div>
+
+        <nav class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lyrics.html">Midnight Train</a></li>
+                <li><a href="lyrics2.html">The Stranger</a></li>
+            </ul>
+        </nav>
+
+
+        <div id="cBox">
+            <div id="cBox1">
+        
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+
+
+        <!--Inside the "a" tag we have an attribute. A Href attribute that means Hyper text reference-->
+        <!--title attribute is a on hover tooltip-->
+        <!--This is an absolute URL. You can also reference a realtive URL that's in your project-->
+        <!--A means Anchor A Tags for Hyperlinks-->
+        <a href="https://www.youtube.com/channel/UCs37XEZ9QTBj_I3YUaXQtdA"
+        target="_blank"
+        title="Press me hard and see what happens"
+        >
+            Press Me Hard
+        </a>
+
+        <br>
+        <br>
+
+        <a href="lyrics.html" target="_blank">
+            Song Lyrics
+        </a>
+
+        <br>
+        <br>
+
+        <a href="mailto:test@gmail.com">
+            Email Me
+        </a>
+
+        <br>
+        <br>
+
+
+
+        <h3>Adventure Time</h3>
+        <video height="150" controls>
+            <source src="video/Adv time repair montage.mp4" type="video/mp4">
+            <source src="video/Adv time repair montage.webm" type="video/webm">
+        </video>
+
+        <br>
+        <br>
+
+        <h3>Arcane</h3>
+        <video src="video/Arcane.mp4" height="150" controls>
+
+        </video>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="gallery">
+            <a target="_blank" href="images/pilgrim.png">
+                <img src="images/pilgrim.png" alt="Scott Pilgrim" width="200px">
+            </a>
+            <div class="description">Pilgrim</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="images/pilgrim1.png">
+                <img src="images/pilgrim1.png" alt="Scott Pilgrim" width="200px">
+            </a>
+            <div class="description">Old Pilgrim</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="images/pilgrim2.png">
+                <img src="images/pilgrim2.png" alt="Scott Pilgrim" width="200px">
+            </a>
+            <div class="description">Ramona</div>
+        </div>
+
+
+        <br>
+        <br>
+
+        <div class="flexContainer">
+            <div class="flexBox" id="fBox">1</div>
+            <div class="flexBox" id="fBox1">2</div>
+            <div class="flexBox" id="fBox2">3</div>
+            <div class="flexBox" id="fBox3">4</div>
+        </div>
+
+        <br>
+        <br>
+
+        <h1 id="hi">This is a h1 with the hi id heading</h1> 
+        <h1 id="hi2">This is a h1 with the hi2 id heading</h1> 
+        <h1 id="hi3">This is a h1 with the hi3 id heading</h1> 
+        <br>
+        <br>
+        <h1 class="awesomeClass">This is getting it's style from a class</h1> 
+        <h1 class="terminatorClass">This is getting it's style from a class</h1> 
+        <h1 class="awesomeClass">This is getting it's style from a class</h1> 
+        <h1 class="terminatorClass">This is getting it's style from a class</h1> 
+
+        <br>
+        <br>
+        
+        <div id="divCont">
+            <p>This is #1</p>
+            <p>This is #2</p>
+            <div>
+                <p>This is #3</p>
+            </div>
+        </div>
+        <p>This is #4</p>
+        <p>This is #5</p>
+
+        <br>
+        <br>
+
+        <!--entype is encryption type this particular one is for multi form data used when sending large amounts of info-->
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+
+            <h3>Form</h3>
+            <label for="username">username:</label>
+            <input type="text" id="username" placeholder="Jetray" minlength="6" maxlength="12" required>
+            <br>
+            <label for="password">password:</label>
+            <input type="password" id="password" >
+            <br>
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="zascra@gmail.com">
+            <br>
+            <label for="phone">phone number:</label>
+            <input type="tel" id="phone" placeholder="08188571326">
+            <br>
+            <label for="bday">birthdate</label>
+            <input type="date" id="bday">
+            <br>
+            <label for="quantity">quantity</label>
+            <input type="number" id="quantity" min="0" max="99" value="1">
+            <br>
+            <label for="title">title</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." value="Mrs." name="title">
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." value="PhD." name="title">
+            <br>
+            <label for="payment">payment:</label>
+            <select id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard"></option>
+                <option value="giftcard">giftcard</option>
+            </select>
+            <br>
+            <label for="subscribe">subscribe:</label>
+            <input type="checkbox" id="subscribe">
+
+            <label for="comment">comment:</label>
+            <textarea id="comment" rows="1" cols="30"></textarea>
+            <br>
+            <label for="file">file:</label>
+             <!--Accepts all files by default but you can limit the file type with the accept attribute-->
+            <input 
+            type="file" 
+            id="file"
+           accept="image/png, image/jpeg"
+            >
+
+            <br>
+            <input type="reset">
+            <br>
+            <input type="submit">
+
+        </form>
+
+
+        <br>
+        <br>
+
+        <a href="https://www.youtube.com/channel/UCs37XEZ9QTBj_I3YUaXQtdA" target="_blank">
+            <button 
+            style="font-size: 25px; 
+            background-color: grey;
+            color: lightblue;
+            border-radius: 5px;"> Open Me Up 
+            </button>
+        </a>
+
+        <br>
+        <br>
+
+        <h3>Store hours</h3>
+        <table border="2" style="background-color: black;">
+            <!--Tr rag meaning table row-->
+            <tr align="center" style="background-color: blue;">
+                <!--th meaning table header-->
+                <th width = "100">Sunday</th>
+                <th width = "100">Monday</th>
+                <th width = "100">Tuesday</th>
+                <th width = "100">Wednesday</th>
+                <th width = "100">Thursday</th>
+                <th width = "100">Friday</th>
+                <th width = "100">Saturday</th>
+            </tr>
+            <tr align="center" style="background-color: yellow;">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </table>
+
+
+        <br>
+        <br>
+
+        <div class="dropdown">
+            <button>Anime</button>
+            <div class="content">
+                <a href="">OnePiece</a>
+                <a href="">Naruto</a>
+                <a href="">Bleach</a>
+            </div>
+        </div>
+
+        <p>Some text under the dropdown menu</p>
+
+        <br>
+        <br>
+
+        <!--Unordered List-->
+        <h3>Groceries</h3>
+        <ul class="emojiList"><!--Ul tag meaning Unordered List-->
+            <li><!--li meaning List Item-->milk</li>
+            <li>eggs</li>
+            <li>bread</li>
+            <li>banana</li>
+            <li>tea ingredients</li><ul>
+                <li>milo</li>
+                <li>milk</li>
+                <li>sugar</li>
+            </ul>
+        </ul>
+        <!--Ordered List-->
+        <h3>TO DO LIST</h3>
+        <ol><!--Ol tag meaning Ordered List-->
+            <li>Brush Teeth</li>
+            <li>Work out</li>
+            <li>Take shower</li>
+        </ol>
+
+        <!--Description List-->
+        <h3>Aliens</h3>
+        <dl style="background-color: chocolate; border: 2px solid"><!--Dl tag meaning Description List-->
+            <dt>Humongasour</dt><!--dt tag meaning description term-->
+            <dd>A dinosaur humanoid alien with the ability to grow in size</dd><!--dd tag meaning description definition-->
+            <dt>Jetray</dt><!--dt tag meaning description term-->
+            <dd>A pteradacle like alien with supersonic flight speed capabilities</dd><!--dd tag meaning description definition-->
+        </dl>
+
+
+        <br>
+        <br>
+        <h1>
+            <!--Span is an inline container-->
+            <span style="background-color: blue;">
+                This is a span title
+            </span>
+        </h1>
+        <h1>
+            <!--Div is a block container-->
+            <div style="background-color: blueviolet;">
+                This is a div title
+            </div>
+        </h1>
+        <p>
+            <span style="background-color: blue;">
+                This is a span sentence.
+            </span>
+        </p>
+        <p>
+            <div style="background-color: blueviolet;">
+                This is a div sentence.
+            </div>
+        </p>
+        <br>
+
+        <br>
+        <!--Text Formatting Basically-->
+        <p>This is a <b>bold</b> example</p>
+        <p>This is a <i>italic</i> example</p>
+        <p>This is a <u>underlined</u> example</p>
+        <p>This is a <del>crossed out</del> example</p>
+        <p>This is a <big>big</big> example</p>
+        <p>This is a <small>small</small> example</p>
+        <p>This is a <sub>subscript</sub> example</p>
+        <p>This is a <sup>superscript</sup> example</p>
+        <p>This is a <tt>monospaced</tt> example</p>
+        <p>This is a <mark style="background-color: limegreen;">highlighted</mark> example</p>
+        <br>
+
+
+        <br>
+
+        <p>Midnight Train</p>
+        <audio controls>
+            <source src="audio/midnightTrain.mp3" type="audio/mpeg">
+            <!--Fallback added here incase the first audio file isn't supported
+             as well as letting the website know the audio type-->
+            <source src="audio/midnightTrain.wav" type="audio/wav">
+        </audio>
+        <br>
+        <p>Afro Xmas</p>
+        <audio controls>
+            <source src="audio/xmas.mp3">
+        </audio>
+        <br>
+        <p>Huh</p>
+        <audio controls>
+            <source src="audio/huh.mp3">
+        </audio>
+
+        <br>
+        <br>
+
+        <!--alt alternative text helps the audio listeners. 
+        it also appears when there isn't an image. 
+        it's just good practice to add alternative texts-->
+        
+        <a 
+        href="https://arcane.fandom.com/wiki/Vander"
+        target="_blank"
+        title="Opens Vander Wiki">
+
+        <img 
+        src="images/Beast.png"
+        alt="This is vander the beast from the show Arcane"
+        height="150"
+        id="beast"
+        >
+
+        </a>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis odio earum nisi. Necessitatibus consectetur recusandae veniam earum culpa asperiores quidem harum, optio aliquam explicabo tempore, aliquid pariatur voluptates ullam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis odio earum nisi. Necessitatibus consectetur recusandae veniam earum culpa asperiores quidem harum, optio aliquam explicabo tempore, aliquid pariatur voluptates ullam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis odio earum nisi. Necessitatibus consectetur recusandae veniam earum culpa asperiores quidem harum, optio aliquam explicabo tempore, aliquid pariatur voluptates ullam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis odio earum nisi. Necessitatibus consectetur recusandae veniam earum culpa asperiores quidem harum, optio aliquam explicabo tempore, aliquid pariatur voluptates ullam.</p>
+
+        <br>
+        <br>
+
+        <a href="https://dc.fandom.com/wiki/Superman_(Clark_Kent)" target="_blank" title="Opens Superman's Wiki Page">
+        <img src="images/Superman.png" alt="Superman in God Mode" height="150">
+        </a>
+
+        <h1>This is a h1 heading</h1> 
+        <h2>This is a h2 heading</h2>
+        <h3>This is a h3 heading</h3>
+        <h4>This is a h4 heading</h4>
+        <h5>This is a h5 heading</h5>
+        <h6>This is a h6 heading</h6>
+
+        <div class="box" id="box1" style="text-align: center; align-content: center;">BOX</div>
+        <div class="box" id="box2" style="text-align: center; align-content: center;">BOX</div>
+
+        <div class="pages">
+            <a href=""><</a>
+            <a href="index.html" class="activePage">1</a>
+            <a href="lyrics.html">2</a>
+            <a href="lyrics2.html">3</a>
+            <a href="lyrics.html">></a>
+        </div>
+
+    </body>
+
+
+
+    <br><!--This is a line break as well as a self closing tag-->
+    <hr><!--This is a line drawn called a horizontal rule-->
+    <br><!--This is a line break as well as a self closing tag-->
+    <hr><!--This is a line drawn called a horizontal rule-->
+    <br><!--This is a line break as well as a self closing tag-->
+    <hr><!--This is a line drawn called a horizontal rule-->
+    <br><!--This is a line break as well as a self closing tag-->
+    <br><!--This is a line break as well as a self closing tag-->
+
+    <p> <!--P Tags for paragraphs-->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut iste voluptatem natus eum accusantium error officia saepe a! Aliquam, quis. Pariatur facere ratione quis ullam nisi officia magni, temporibus accusamus!
+    </p>
+        <!--Paragraphs are seperated with a linebreak-->
+    <p> <!--P Tags for paragraphs-->
+        Lorem ipsum dolor, sit amet consectetur 
+        adipisicing elit. Aut iste voluptatem 
+        natus eum accusantium error officia saepe 
+        a! Aliquam, quis. Pariatur facere ratione 
+        quis ullam nisi officia magni, temporibus accusamus!
+    </p>
+
+    <pre> <!--Pre Tags for preformatted paragraphs, they retain line breaks or spaces within the tags-->
+        Lorem ipsum dolor, sit amet consectetur 
+
+        adipisicing elit. Aut iste voluptatem 
+        
+        natus eum accusantium error officia saepe 
+        a! Aliquam, quis. Pariatur facere ratione 
+        quis ullam nisi officia magni, temporibus accusamus!
+    </pre>
+
+    <footer>
+        <hr>
+        author: The 3D Cookie
+        <br>
+        &copy;copyright reserved
+    </footer>
+    
+</html>
