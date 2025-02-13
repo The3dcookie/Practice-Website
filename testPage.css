@@ -252,7 +252,7 @@ button {
 }
 
 
-
+/* Media query stuff over here. Don't think this works well sha */
 /* For screens smaller than 1200px */
 @media screen and (max-width: 1200px) {
     .container {
