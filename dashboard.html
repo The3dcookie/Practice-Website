@@ -30,12 +30,12 @@
 
             </div>
 
-            <a href="">
+            <a href="testPage.html" onclick="{handleLogout}">
                 <div class="logoutButton">
                     <img src="images/dp.jpg" class="dpLogoutIcons">
                     <div>
-                        <span id="username">Elvis Emezi</span>
-                        <span id="email">cookieemezi@gmail.com</span>
+                        <span id="username" class="username">Elvis Emezi</span>
+                        <span id="email" class="emailName">cookieemezi@gmail.com</span>
                     </div>
                 </div>
             </a>
@@ -59,5 +59,33 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Set a value in localStorage (for demo purposes)
+        // You can remove this line if the value is already set
+        // localStorage.setItem('userName', 'John Doe');
+
+        // Get the value from localStorage
+        const userDataString  = localStorage.getItem('userData');
+        const userData = JSON.parse(userDataString);
+
+        // Check if the value exists and set it in the div
+        if (userData) {
+            document.querySelector('.dpName .toggleButton').textContent = userData.firstName;
+            console.log(userData.firstName)
+            document.querySelector(".username").textContent = userData.firstName;
+            document.querySelector('.emailName').textContent = userData.email;
+            console.log(userData.email)
+            
+        }
+
+            const handleLogout = () => {
+                localStorage.removeItem('userData');
+                console.log("logged Out");
+                // Redirect to login page
+                // window.location.href = 'index.html';x    
+            };
+    </script>
+
 </body>
 </html>

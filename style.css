@@ -117,10 +117,10 @@ h1
 }
 
 /* Asterix for all elements */
-* 
-{
+/* *  */
+/* { */
     /* background-color: blueviolet; */
-}
+/* } */
 
 .icons{
     text-align: center;
